@@ -6,9 +6,14 @@ export default class UserModel extends Model {
   @attr('boolean', { defaultValue: false }) value;
 
   changeValue() {
-    this.value = !this.value;
 
     /* add a confirm when this funciton is called */
+    /* NOTE: confirm returns true if press ok and false when press cancel
+	TO DO: when the function returns true, change value to !value, otherwise, do nothing
+     */
     confirm("Archive this user?")
+    if (confirm){
+    	this.value = !this.value;
+    }
   }
 }
