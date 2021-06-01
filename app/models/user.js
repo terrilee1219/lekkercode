@@ -7,5 +7,8 @@ export default class UserModel extends Model {
 
   changeValue() {
     this.value = !this.value;
+
+    /* add a confirm when this funciton is called */
+    confirm("Archive this user?")
   }
 }
