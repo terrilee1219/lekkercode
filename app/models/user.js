@@ -11,7 +11,7 @@ export default class UserModel extends Model {
     /* NOTE: confirm returns true if press ok and false when press cancel
 	TO DO: when the function returns true, change value to !value, otherwise, do nothing
      */
-    confirm("Archive this user?")
+    confirm = confirm("Archive this user?")
     if (confirm){
     	this.value = !this.value;
     }
